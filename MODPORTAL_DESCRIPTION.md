@@ -1,5 +1,7 @@
 -- __Manis_TestFramework__/MODPORTAL_DESCRIPTION.md
 
+-- __Manis_TestFramework__/MODPORTAL_DESCRIPTION.md
+
 (en)
 Manis Test Framework is a lightweight **runtime verification framework** for Factorio mods.
 
@@ -16,16 +18,16 @@ It provides a simple way to run deterministic, repeatable checks inside the game
 - Suite-based structure (multiple named tests)
 
 ■ How to use
-1) Enable this mod
-2) Start or load a save
-3) Run:
-   - /manis-test list
-   - /manis-test run <suite>
-   - /manis-test run-all
-4) Check outputs:
-   - Chat log
-   - factorio-current.log
-   - script-output/manis_test_results.log
+
+This framework does nothing by itself.
+
+Each mod must explicitly:
+- require Manis Test Framework
+- define its own test suites
+- register its own commands
+
+See the GitHub README for exact usage examples.
+https://github.com/suumani/Manis_TestFramework/blob/main/README.md
 
 ■ Notes
 - This framework is designed for **command-driven tests** (manual trigger).
@@ -51,16 +53,16 @@ Manis Test Framework は、Factorio Mod向けの **実行時検証（Runtime Ver
 - スイート形式（複数テストをまとめて実行）
 
 ■ 使い方（How to use）
-1) 本Modを有効化
-2) セーブを開始またはロード
-3) 以下のコマンドを実行：
-   - /manis-test list
-   - /manis-test run <suite>
-   - /manis-test run-all
-4) 出力を確認：
-   - チャットログ
-   - factorio-current.log
-   - script-output/manis_test_results.log
+
+この Mod は単体では何も実行しません。
+
+各 Mod 側で以下を明示的に行う必要があります：
+- Manis Test Framework を require する
+- テストスイートを定義する
+- 独自のコマンドを登録する
+
+具体例は GitHub の README を参照してください。
+https://github.com/suumani/Manis_TestFramework/blob/main/README.ja.md
 
 ■ 注意
 - 本フレームワークは **コマンド実行型**です（手動トリガー）。
