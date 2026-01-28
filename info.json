@@ -1,0 +1,12 @@
+{
+  "name": "Manis_TestFramework",
+  "version": "0.0.1",
+  "factorio_version": "2.0",
+  "title": "Manis Test Framework (Runtime Verification)",
+  "author": "suumani",
+  "description": "Lightweight runtime verification framework (commands-based) for Factorio mods.",
+  "thumbnail": "thumbnail.png",
+  "dependencies": [
+    "base >= 2.0.0"
+  ]
+}
